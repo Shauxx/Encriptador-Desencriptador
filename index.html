@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo alura.svg" alt="logo de alura">
+        </div>
+        <h1>Encriptador y Desencriptador</h1>
+    </header>
+    <main>
+        <div class="izquierda">
+            <textarea cols="70" rows="10" id="texto" required placeholder="Ingrese texto aqui"></textarea>
+            <p><iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> Solo letras minusculas sin acentos</p>
+            <button class="boton-encriptar" onclick="realizarOperacion('encriptar')">Encriptar</button>
+            <button class="boton-desencriptar" onclick="realizarOperacion('desencriptar')">Desencriptar</button>
+        </div>
+        <div class="derecha">
+            <img id="imagen_busqueda" src="./img/busqueda.svg" alt="imagen busqueda">
+            <h1></h1>
+            <p></p>
+            <button id="copiar" onclick="copiarResultado()">Copiar al portapapeles</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copyShaunny Estefanía García Vargas -2024-</p>
+    </footer>
+
+    <script src="encriptar.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
